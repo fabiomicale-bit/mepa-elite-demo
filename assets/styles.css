@@ -39,3 +39,21 @@
 @media(max-width:830px){.footer{padding-bottom:150px}}
 @media(max-width:480px){.contact-intro{padding-top:44px;padding-bottom:52px}}
 @media(prefers-reduced-motion:reduce){.to-top,.wa-float{transition:none}}
+
+/* Area «AI per le imprese» (08/11/2026): solo aggiunte, nessuna regola esistente modificata */
+.nav-ai{display:none}
+nav a[aria-current="page"]{color:var(--blue)}
+.ai-home{padding-top:96px;padding-bottom:96px}
+.ai-panel{display:grid;grid-template-columns:1.25fr .85fr;gap:56px;align-items:center;border:1px solid #dbe5f3;border-radius:19px;padding:52px 50px;background:linear-gradient(135deg,#f4f8ff 0%,#eef8f6 100%)}
+.ai-panel-copy p:not(.kicker){color:#56657c;max-width:600px;margin:20px 0 0}
+.ai-status{display:inline-block;background:#fff3cd;color:#4d3500;border:1px solid #d9a521;border-radius:8px;padding:9px 12px;font-size:13px;font-weight:800;line-height:1.45;margin:0 0 18px}
+.ai-intro .ai-status{margin:0 0 22px;max-width:720px}
+.ai-mini-list{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:10px}
+.ai-mini-list li{background:#fff;border:1px solid #e3e9f0;border-radius:11px;padding:12px 15px;font-size:13px;font-weight:700;color:var(--ink)}
+.ai-mini-list li:before{content:"✓";color:#278a7d;font-weight:900;margin-right:9px}
+.ai-features{grid-template-columns:repeat(3,1fr)}
+.ai-steps{list-style:none;padding-left:0;margin-bottom:0}
+.ai-steps p{color:#5d6b80;font-size:14px;margin:0}
+.ai-link-line{margin:24px 0 0}
+@media(max-width:830px){.nav-ai{display:inline-flex;align-items:center;margin-left:auto;padding:10.5px 14px;border:1.5px solid var(--ink);border-radius:9px;color:var(--ink);font-size:13px;font-weight:850;letter-spacing:.04em}.nav-ai:hover{background:var(--soft)}.ai-home{padding-top:64px;padding-bottom:64px}.ai-panel{grid-template-columns:1fr;gap:28px;padding:34px 26px}.ai-features{grid-template-columns:1fr}}
+@media(max-width:480px){.nav-ai{padding:8.5px 11px;font-size:11px}.ai-panel{padding:26px 18px}}
