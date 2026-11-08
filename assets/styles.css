@@ -13,3 +13,29 @@
 .btn-disabled:hover{transform:none}
 .contact-zone .contact-hint a{text-decoration:underline}
 @media(max-width:480px){.demo-notice{font-size:14px;padding:11px 12px}}
+
+/* Contatti, WhatsApp e «Torna su» (08/11/2026): solo aggiunte, nessuna regola V02 modificata, nessuno script */
+.to-top,.wa-float{position:fixed;z-index:40;display:flex;align-items:center;justify-content:center;border-radius:50%;box-shadow:0 8px 22px rgba(8,21,46,.24);transition:background-color .15s}
+.wa-float{right:18px;bottom:18px;width:54px;height:54px;background:#117a3b;color:#fff}
+.wa-float:hover{background:#0c5f2d}
+.wa-float svg{width:30px;height:30px}
+.to-top{right:21px;bottom:86px;width:48px;height:48px;background:var(--ink);color:#fff;border:2px solid #fff}
+.to-top:hover{background:var(--blue)}
+.to-top svg{width:22px;height:22px}
+.to-top:focus-visible,.wa-float:focus-visible{outline:3px solid var(--blue2);outline-offset:3px}
+@supports (animation-timeline:scroll()){.to-top{opacity:0;visibility:hidden;animation:mepa-to-top linear both;animation-timeline:scroll(root block);animation-range:0 360px}}
+@keyframes mepa-to-top{0%,55%{opacity:0;visibility:hidden}100%{opacity:1;visibility:visible}}
+.contact-intro{padding-top:72px;padding-bottom:72px}
+.contact-intro h1{margin:16px 0 22px}
+.contact-question{font-size:clamp(24px,2.6vw,32px);letter-spacing:-.03em;line-height:1.25;max-width:780px;margin:0 0 24px;color:var(--ink)}
+.contact-intro .lead{max-width:720px;margin-bottom:12px}
+.contact-copy{max-width:700px}
+.contact-copy p{color:#5d6b80;margin:0 0 16px}
+.contact-zone .contact-strong{color:#fff;font-weight:800}
+.contact-card .contact-demo-note{background:#fff3cd;color:#4d3500;border:1px solid #d9a521;border-radius:9px;padding:12px 14px;font-size:13px;font-weight:700;line-height:1.5;margin:16px 0 6px}
+.contact-card .contact-line{font-size:15px;color:var(--ink);margin:8px 0 0;overflow-wrap:anywhere}
+.contact-card .btn{width:100%;justify-content:space-between}
+.btn-whatsapp{margin-top:12px;color:#fff;background:#117a3b}
+@media(max-width:830px){.footer{padding-bottom:150px}}
+@media(max-width:480px){.contact-intro{padding-top:44px;padding-bottom:52px}}
+@media(prefers-reduced-motion:reduce){.to-top,.wa-float{transition:none}}
